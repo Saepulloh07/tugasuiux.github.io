@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi KPR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/stylekpr.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulasi KPR</h1>
+        <form id="kpr-form">
+            <div class="form-group">
+                <label for="hargaProperti">Harga Properti:</label>
+                <input type="number" id="hargaProperti" name="hargaProperti" required>
+            </div>
+            <div class="form-group">
+                <label for="jumlahDp">Jumlah DP:</label>
+                <input type="number" id="jumlahDp" name="jumlahDp" required>
+            </div>
+            <div class="form-group">
+                <label for="bank">Pilih Bank:</label>
+                <select id="bank" name="bank" required>
+                    <option value="bankA">Bank A</option>
+                    <option value="bankB">Bank B</option>
+                    <option value="bankC">Bank C</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sukuBungaFixed">Suku Bunga Bank Fixed (%):</label>
+                <input type="number" id="sukuBungaFixed" name="sukuBungaFixed" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="jangkaWaktuFixed">Jangka Waktu Pinjaman Fixed (Tahun):</label>
+                <input type="number" id="jangkaWaktuFixed" name="jangkaWaktuFixed" required>
+            </div>
+            <div class="form-group">
+                <label for="sukuBungaFloating">Suku Bunga Bank Floating (%):</label>
+                <input type="number" id="sukuBungaFloating" name="sukuBungaFloating" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="jangkaWaktuTotal">Jangka Waktu Pinjaman Total (Tahun):</label>
+                <input type="number" id="jangkaWaktuTotal" name="jangkaWaktuTotal" required>
+            </div>
+            <button type="submit">Hitung Simulasi</button>
+        </form>
+        <p></p>
+        <button class="cancel-button"><a href="index.html">Batal Transsaksi</a></button>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Rekomendasi Rumah</h1>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/images/deal-01.jpg" class="card-img-top" alt="Rumah 1">
+              <div class="card-body">
+                <h5 class="card-title">Rumah Mewah di Jakarta</h5>
+                <p class="card-text">Lokasi: Jakarta</p>
+                <p class="card-text">Harga: Rp 2.000.000.000</p>
+                <a href="#" class="btn btn-danger">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/images/deal-02.jpg" class="card-img-top" alt="Rumah 2">
+              <div class="card-body">
+                <h5 class="card-title">Rumah Minimalis di Bandung</h5>
+                <p class="card-text">Lokasi: Bandung</p>
+                <p class="card-text">Harga: Rp 1.500.000.000</p>
+                <a href="#" class="btn btn-danger">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="assets/images/deal-03.jpg" class="card-img-top" alt="Rumah 3">
+              <div class="card-body">
+                <h5 class="card-title">Rumah Asri di Yogyakarta</h5>
+                <p class="card-text">Lokasi: Yogyakarta</p>
+                <p class="card-text">Harga: Rp 1.000.000.000</p>
+                <a href="#" class="btn btn-danger">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
